@@ -1,0 +1,97 @@
+/***** reviews *****/
+.reviews{
+    padding: 10rem 0;
+    text-align: center;
+    position: relative;
+}
+.reviewsVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.videoBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+}
+.reviewCard {
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.reviewCardImg{
+    position: relative;
+}
+.reviewCardImg img{
+    width: 33%; 
+    height: 117px;
+    width:  117px;
+    float: left;
+    margin-right:2rem; 
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+}
+.reviewCardImg figcaption{
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 26%;
+    color: var(--white-bg);
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+}
+.reviewCardInfo h5{
+    margin-bottom: 1rem;
+}
+.reviewCardInfo{
+    text-align: left;
+}
+@media (min-width:1024px) {
+    .reviewCard{
+        display: flex;
+        align-items: center;
+        padding: 4rem;
+    }
+    .reviewCards{
+        width: 75%;
+        margin: 0 auto;
+        border-radius: 3px;
+        padding: 2rem;
+        padding-left: 4rem;
+        -webkit-transform: skewX(-12deg);
+        transform: skewX(-12deg);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    .reviewCardInfo, .reviewCardImg{
+        transform: skewX(12deg);
+        -webkit-transform: skewX(12deg);
+        -moz-transform: skewX(12deg);
+        -ms-transform: skewX(12deg);
+        -o-transform: skewX(12deg);
+    }
+    .reviewCard:hover .reviewCardImg img{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+    .reviewCard:hover .reviewCardImg figcaption{
+        display: block;
+    }
+    .reviewCardImg img{
+        width: 130px;
+        height: 130px;
+    }
+}
+/***** End reviews *****/
