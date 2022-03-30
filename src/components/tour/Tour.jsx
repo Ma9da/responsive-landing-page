@@ -2,7 +2,7 @@ import React from 'react'
 import nat1 from "../../assets/img/nat-1-large.jpg"
 import nat2 from "../../assets/img/nat-2-large.jpg"
 import nat3 from "../../assets/img/nat-3-large.jpg"
-
+import "./tour.css"
 function Tour() {
     return (
         <section class="tour">

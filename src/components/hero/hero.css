@@ -7,7 +7,7 @@
 }
 .hero{
     height: 85vh;
-    background: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),url(../assets/img/hero-small.jpg) top;
+    background: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),url(../../assets/img/hero-small.jpg) top;
     background-size: cover;
     position: relative;
     color: var(--white-bg);
