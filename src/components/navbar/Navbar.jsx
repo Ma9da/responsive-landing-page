@@ -1,18 +1,19 @@
-import  logoWhite  from "../../assets/img/logo-white.png";
+import logoWhite from "../../assets/img/logo-white.png";
 import "./Navbar.css"
+import 'boxicons'
 function Navbar() {
     return (
-        <header class="nav">
-            <section class="container flexContainer">
-                <figure class="navLogo">
+        <header className="nav">
+            <section className="container flexContainer">
+                <figure className="navLogo">
                     <img src={logoWhite} alt="logo" />
                 </figure>
-                <label for="active" class="toggleButton" id="openToggle">
-                    <i onclick="changeIcon(this)" class='bx bx-menu'></i>
+                <label for="active" className="toggleButton" id="openToggle">
+                <box-icon name='menu' size="32px" color='#777777'></box-icon>
                 </label>
                 <input type="checkbox" name="active" id="active" />
                 <nav id="navOverlay">
-                    <ul class="navLinks">
+                    <ul className="navLinks">
                         <li><a href="/">01 ABOUT NATOUS</a></li>
                         <li><a href="/">02 YOUR BENFITS</a></li>
                         <li><a href="/">03 POPULAR TOURS</a></li>
