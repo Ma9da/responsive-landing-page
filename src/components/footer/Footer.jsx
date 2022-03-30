@@ -1,21 +1,22 @@
 import React from 'react'
 import "./footer.css"
+import logo from "../../assets/img/logo-green-2x.png"
 function Footer() {
     return (
         <footer>
-            <div class="container flexContainer">
+            <div className="container flexContainer">
                 <figure>
-                    <img src="./assets/img/logo-green-2x.png" alt="" />
+                    <img src={logo} alt="" />
                 </figure>
-                <div class="footerInfo">
-                    <ul class="footerLinks">
+                <div className="footerInfo">
+                    <ul className="footerLinks">
                         <li><a href="/">company</a></li>
                         <li><a href="/">contact us</a></li>
                         <li><a href="/">careers</a></li>
                         <li><a href="/">privacy policy</a></li>
                         <li><a href="/">terms</a></li>
                     </ul>
-                    <p class="footerCopyWrite">
+                    <p className="footerCopyWrite">
                         Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND SASS. Copyright © by Jonas
                         Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT
                         to
