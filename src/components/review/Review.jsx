@@ -1,13 +1,14 @@
 import nat8 from "../../assets/img/nat-8.jpg"
 import nat9 from "../../assets/img/nat-9.jpg"
-
+import video from "../../assets/img/video.webm"
+import "./review.css"
 function Review() {
     return (
         <section className="reviews">
             <div className="container flexContainer">
                 <div className="videoBackground">
                     <video className="reviewsVideo" autoplay muted loop>
-                        <source src="./assets/img/video.webm" type="video/webm"/>
+                        <source src={video} type="video/webm"/>
                     </video>
                 </div>
                 <h2 className="title">WE MAKE PEOPLE GENUINELY HAPPY</h2>
