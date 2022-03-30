@@ -139,7 +139,7 @@
     .popularFooter span,
     .popularFooter h4, 
     .popularFooter a,
-    .popular .primaryButton{
+    .popularFooter .primaryButton{
         transform: rotateY(180deg);
     }
     .popularCard:hover{
