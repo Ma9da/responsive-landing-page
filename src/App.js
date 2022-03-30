@@ -1,5 +1,6 @@
 import Contact from "./components/contact/Contact";
 import Features from "./components/features/Features";
+import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Popular from "./components/popular/Popular";
@@ -16,6 +17,7 @@ function App() {
       <Popular/>
       <Review/>
       <Contact/>
+      <Footer/>
     </>
   );
 }
