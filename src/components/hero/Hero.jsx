@@ -2,13 +2,13 @@ import React from 'react'
 import "./hero.css"
 function Hero() {
     return (
-        <section class="hero">
-            <div class="container flexContainer">
+        <section className="hero">
+            <div className="container flexContainer">
                 <h2>OUTDOORS</h2>
                 <p>
                     IS WHERE LIFE HAPPENS
                 </p>
-                <button class="primaryButton">
+                <button className="primaryButton">
                     discover our tours
                 </button>
             </div>
