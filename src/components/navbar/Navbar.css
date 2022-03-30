@@ -1,0 +1,143 @@
+/***** navbar *****/
+.nav .flexContainer{
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 0 0.625rem;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.toggleButton{
+    background-color: var(--white-bg);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    z-index: 5;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 10%);
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+.toggleButton i{
+    font-size: 2rem;
+    color: var(--dark-text);
+    transform: translateY(27%);
+    -webkit-transform: translateY(27%);
+    -moz-transform: translateY(27%);
+    -ms-transform: translateY(27%);
+    -o-transform: translateY(27%);
+}
+.navLogo{
+    width: 24%;
+}
+.navLinks{
+    text-align: center;
+}
+.navLinks a{
+    color: var(--white-bg);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all .45s;
+    -webkit-transition: all .45s;
+    -moz-transition: all .45s;
+    -ms-transition: all .45s;
+    -o-transition: all .45s;
+}
+.navLinks li{
+    padding: 0.5rem 0.625rem;
+    transition: all .45s;
+    -webkit-transition: all .45s;
+    -moz-transition: all .45s;
+    -ms-transition: all .45s;
+    -o-transition: all .45s;
+}
+.navLinks li:hover{
+    transform: translateX(1rem);
+    background-position: 100% center;
+    display: inline-block;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, rgb(255, 255, 255) 50%);
+    background-size: 220%;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: translateX(1rem);
+    -moz-transform: translateX(1rem);
+    -ms-transform: translateX(1rem);
+    -o-transform: translateX(1rem);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+.navLinks  li:hover a{
+    color: rgb(85, 197, 122);
+}
+#openToggle:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+#active:checked ~ #navOverlay{
+    clip-path: circle(75%);
+    background-image: var(--gradient-green);
+}
+#active{
+    display: none;
+}
+#navOverlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -ms-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media (min-width:768px) {
+    .nav .flexContainer{
+        margin-top: 0;
+    }
+    .nav{
+        top: 5.5625rem;
+    }
+    .toggleButton{
+        height: 5rem;
+        width: 5rem;
+        right: 0;
+    }
+    .toggleButton i{
+        font-size: 3rem;
+        transform: translateY(33%);
+        -webkit-transform: translateY(33%);
+        -moz-transform: translateY(33%);
+        -ms-transform: translateY(33%);
+        -o-transform: translateY(33%);
+    }
+    .navLogo{
+        margin-top: 0;
+        width: 8%;
+    }
+    .navLinks li{
+        padding: 1rem 2rem;
+    }
+    .navLinks a{
+        font-size: 3rem;
+    }
+}
+/***** End navbar *****/
