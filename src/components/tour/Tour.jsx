@@ -5,10 +5,10 @@ import nat3 from "../../assets/img/nat-3-large.jpg"
 import "./tour.css"
 function Tour() {
     return (
-        <section class="tour">
-            <div class="container flexContainer">
-                <h2 class="title">EXCITING TOURS FOR ADVENTUROUS PEOPLE</h2>
-                <div class="tourDesc">
+        <section className="tour">
+            <div className="container flexContainer">
+                <h2 className="title">EXCITING TOURS FOR ADVENTUROUS PEOPLE</h2>
+                <div className="tourDesc">
                     <h4>YOU'RE GOING TO FALL IN LOVE WITH NATURE</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
@@ -20,16 +20,16 @@ function Tour() {
                         voluptatum
                         nam.
                     </p>
-                    <a href="/" class="secondryButton">Learn more<box-icon name='right-arrow-alt' color='#55c57a' ></box-icon></a>
+                    <a href="/" className="secondryButton">Learn more<box-icon name='right-arrow-alt' color='#55c57a' ></box-icon></a>
                 </div>
-                <div class="tourImages">
-                    <figure class="tourImg">
+                <div className="tourImages">
+                    <figure className="tourImg">
                         <img src={nat1} alt="nature" />
                     </figure>
-                    <figure class="tourImg centerImg">
+                    <figure className="tourImg centerImg">
                         <img src={nat2} alt="nature" />
                     </figure>
-                    <figure class="tourImg">
+                    <figure className="tourImg">
                         <img src={nat3} alt="nature" />
                     </figure>
                 </div>
