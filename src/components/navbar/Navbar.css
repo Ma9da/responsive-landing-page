@@ -23,14 +23,9 @@
     border: none;
     text-align: center;
 }
-.toggleButton i{
-    font-size: 2rem;
-    color: var(--dark-text);
-    transform: translateY(27%);
-    -webkit-transform: translateY(27%);
-    -moz-transform: translateY(27%);
-    -ms-transform: translateY(27%);
-    -o-transform: translateY(27%);
+.menuIcon{
+    transform: translateY(4%);
+    transform: translateX(7%);
 }
 .navLogo{
     width: 24%;
