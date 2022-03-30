@@ -20,7 +20,7 @@ function Tour() {
                         voluptatum
                         nam.
                     </p>
-                    <a href="/" class="secondryButton">Learn more<box-icon name='right-arrow-alt' color='#777777' ></box-icon></a>
+                    <a href="/" class="secondryButton">Learn more<box-icon name='right-arrow-alt' color='#55c57a' ></box-icon></a>
                 </div>
                 <div class="tourImages">
                     <figure class="tourImg">
