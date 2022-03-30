@@ -7,7 +7,7 @@ function Review() {
         <section className="reviews">
             <div className="container flexContainer">
                 <div className="videoBackground">
-                    <video className="reviewsVideo" autoplay muted loop>
+                    <video className="reviewsVideo" autoPlay muted loop>
                         <source src={video} type="video/webm"/>
                     </video>
                 </div>

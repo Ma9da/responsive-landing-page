@@ -8,8 +8,8 @@ function Navbar() {
                 <figure className="navLogo">
                     <img src={logoWhite} alt="logo" />
                 </figure>
-                <label for="active" className="toggleButton" id="openToggle">
-                <box-icon name='menu' size="32px" color='#777777'></box-icon>
+                <label htmlFor="active" className="toggleButton" id="openToggle">
+                    <box-icon name='menu' size="32px" color='#777777'></box-icon>
                 </label>
                 <input type="checkbox" name="active" id="active" />
                 <nav id="navOverlay">
