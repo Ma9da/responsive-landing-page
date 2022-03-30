@@ -1,0 +1,149 @@
+/***** popular *****/
+.popular{
+    background:var(--footer-text) ;
+    padding: 15rem 0 5rem 0;
+}
+.popularWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+.popularCard{
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.popularCard li{
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+.popularHeader{
+    height: 13rem;
+    position: relative;
+}
+.popularHeader span{
+    color: var(--white-bg);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    width: 60%;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+.popularHeaderYellow{
+    background: linear-gradient(to right bottom, #ffb900c9, #ff773078),url(../../assets/img/nat-5.jpg) no-repeat;
+    background-size: cover;
+}
+.popularCardYellow .popularFooter,
+.popularHeaderYellow span{
+    background-image:  linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.popularHeaderGreen{
+    background: linear-gradient(to right bottom,#7ed56f82, #28b48575),url(../../assets/img/nat-6.jpg) no-repeat;
+    background-size: cover;
+}
+.popularCardGreen .popularFooter,
+.popularHeaderGreen span{
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.popularHeaderBlue{
+    background:linear-gradient(to right bottom,  #2998ff70, #5643fa4f),url(../../assets/img/nat-7.jpg) no-repeat;
+    background-size: cover;
+}
+.popularCardBlue .popularFooter,
+.popularHeaderBlue span{
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.popularFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 3rem 3rem 3rem;
+    color: var(--white-bg);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+.popularFooter h4{
+    font-weight: 100;
+    font-size: 2rem;
+    padding: 20px 0;
+}
+.popularCard .primaryButton{
+    background: var(--white-bg);
+    color: var(--dark-text);
+    font-size: 0.75rem;
+    padding: 1rem 1.5rem;
+}
+.popular .primaryButton{
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+@media (min-width:768px) {
+    .popularCard{
+        width: 70%;
+    }
+}
+@media (min-width:1024px) {
+    .popularWrapper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .popularCard{
+        width: 23.5%;
+        position: relative;
+    }
+    .popular ul{
+        width: 80%;
+        margin: 0 auto;
+        padding: 1.875rem 0
+    }
+    .popularFooter {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: none;
+        visibility: hidden;
+        transition: transform 1s ease;
+        -webkit-transition: transform 1s ease;
+        -moz-transition: transform 1s ease;
+        -ms-transition: transform 1s ease;
+        -o-transition: transform 1s ease;
+    }
+    .popularCard:hover .popularFooter{
+        visibility: visible;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    .popularFooter span,
+    .popularFooter h4, 
+    .popularFooter a,
+    .popular .primaryButton{
+        transform: rotateY(180deg);
+    }
+    .popularCard:hover{
+        visibility: hidden;
+    }
+}
+/***** End popular *****/
