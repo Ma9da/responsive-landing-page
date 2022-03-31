@@ -12,6 +12,7 @@
 }
 .tour .secondryButton{
     display: inline-flex;
+    align-items: center;
 }
 .tour .title{
     margin-bottom: 3rem;
@@ -33,8 +34,8 @@
     display: flex;
     justify-content: center;
 }
-.arrowIcon{
-    width: 15%;
+box-icon{
+    fill: var(--dark-green);
 }
 .tourImg{
     top: 0;

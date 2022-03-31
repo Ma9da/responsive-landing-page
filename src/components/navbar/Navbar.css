@@ -23,6 +23,9 @@
     border: none;
     text-align: center;
 }
+.nav box-icon{
+    transform: translate(4px, 25px);
+}
 .menuIcon{
     transform: translate(7%, 7%);
     -webkit-transform: translate(7%, 7%);

@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Popular from "./components/popular/Popular";
 import Review from "./components/review/Review";
 import Tour from "./components/tour/Tour";
-
+import 'boxicons'
 function App() {
   const hero = {
     title: "OUTDOORS"

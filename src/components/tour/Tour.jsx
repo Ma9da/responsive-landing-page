@@ -21,7 +21,7 @@ function Tour(props) {
                         voluptatum
                         nam.
                     </p>
-                    <a href="/" className="secondryButton">Learn more </a>
+                    <a href="/" className="secondryButton">Learn more <box-icon name='right-arrow-alt' ></box-icon> </a>
                 </div>
                 <div className="tourImages">
                     <figure className="tourImg">

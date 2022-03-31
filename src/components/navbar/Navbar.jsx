@@ -8,7 +8,7 @@ function Navbar() {
                     <img src={logoWhite} alt="logo" />
                 </figure>
                 <label htmlFor="active" className="toggleButton" id="openToggle">
-                    <box-icon name='menu' size="32px" color='#777777'></box-icon>
+                <box-icon name='menu' color='#777777' size="32px" ></box-icon>
                 </label>
                 <input type="checkbox" name="active" id="active" />
                 <nav id="navOverlay">
