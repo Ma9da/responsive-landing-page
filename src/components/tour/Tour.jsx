@@ -3,11 +3,12 @@ import nat1 from "../../assets/img/nat-1-large.jpg"
 import nat2 from "../../assets/img/nat-2-large.jpg"
 import nat3 from "../../assets/img/nat-3-large.jpg"
 import "./tour.css"
-function Tour() {
+function Tour(props) {
+    const { title } = props.tour
     return (
         <section className="tour">
             <div className="container flexContainer">
-                <h2 className="title">EXCITING TOURS FOR ADVENTUROUS PEOPLE</h2>
+                <h2 className="title">{title}</h2>
                 <div className="tourDesc">
                     <h4>YOU'RE GOING TO FALL IN LOVE WITH NATURE</h4>
                     <p>
@@ -20,7 +21,7 @@ function Tour() {
                         voluptatum
                         nam.
                     </p>
-                    <a href="/" className="secondryButton">Learn more<box-icon name='right-arrow-alt' color='#55c57a' ></box-icon></a>
+                    <a href="/" className="secondryButton">Learn more </a>
                 </div>
                 <div className="tourImages">
                     <figure className="tourImg">

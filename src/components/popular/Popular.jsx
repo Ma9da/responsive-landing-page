@@ -1,9 +1,10 @@
 import "./popular.css"
-function Popular() {
+function Popular(props) {
+    const { title } = props.popular
     return (
         <section className="popular">
             <div className="container flexContainer">
-                <h2 className="title">most popular tour</h2>
+                <h2 className="title">{title}</h2>
                 <div className="popularWrapper">
                     {/* <!-- start  --> */}
                     <div className="popularCard popularCardYellow">

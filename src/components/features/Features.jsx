@@ -7,7 +7,7 @@ function Features() {
                 <div className="featuresWrapper">
                     {/* <!-- strat --> */}
                     <div className="featureCard">
-                        <span className="featureIcon"> <box-icon name='globe' color='#777777' ></box-icon> </span>
+                        <span className="featureIcon">  </span>
                         <h4 className="featureTitle">EXPLORE THE WORLD</h4>
                         <p className="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
                             ipsum
@@ -16,7 +16,7 @@ function Features() {
                     {/* <!-- end --> */}
                     {/* <!-- start  --> */}
                     <div className="featureCard">
-                        <span className="featureIcon"> <box-icon name='compass' color='#777777' ></box-icon> </span>
+                        <span className="featureIcon"> </span>
                         <h4 className="featureTitle">MEET NATURE</h4>
                         <p className="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
                             ipsum
@@ -25,7 +25,7 @@ function Features() {
                     {/* <!-- end --> */}
                     {/* <!-- start  --> */}
                     <div className="featureCard">
-                        <span className="featureIcon"><box-icon name='map-alt' color='#777777' ></box-icon></span>
+                        <span className="featureIcon"> </span>
                         <h4 className="featureTitle">FIND YOUR WAY</h4>
                         <p className="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
                             ipsum
@@ -34,7 +34,7 @@ function Features() {
                     {/* <!-- end --> */}
                     {/* <!-- start  --> */}
                     <div className="featureCard">
-                        <span className="featureIcon"> <box-icon name='heart' color='#777777' ></box-icon> </span>
+                        <span className="featureIcon"> </span>
                         <h4 className="featureTitle">LIVE A HEALTHIER LIFE</h4>
                         <p className="featureInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
                             ipsum

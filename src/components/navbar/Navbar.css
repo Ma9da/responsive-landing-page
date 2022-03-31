@@ -24,8 +24,11 @@
     text-align: center;
 }
 .menuIcon{
-    transform: translateY(4%);
-    transform: translateX(7%);
+    transform: translate(7%, 7%);
+    -webkit-transform: translate(7%, 7%);
+    -moz-transform: translate(7%, 7%);
+    -ms-transform: translate(7%, 7%);
+    -o-transform: translate(7%, 7%);
 }
 .navLogo{
     width: 24%;

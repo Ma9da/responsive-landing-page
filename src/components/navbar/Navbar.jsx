@@ -1,6 +1,5 @@
 import logoWhite from "../../assets/img/logo-white.png";
 import "./Navbar.css"
-import menu from "../../assets/icons/bx-menu.svg"
 function Navbar() {
     return (
         <header className="nav">
@@ -9,8 +8,7 @@ function Navbar() {
                     <img src={logoWhite} alt="logo" />
                 </figure>
                 <label htmlFor="active" className="toggleButton" id="openToggle">
-                    {/* <box-icon name='menu' size="32px" color='#777777'></box-icon> */}
-                    <img  className="menuIcon" src={menu} alt="" />
+                    <box-icon name='menu' size="32px" color='#777777'></box-icon>
                 </label>
                 <input type="checkbox" name="active" id="active" />
                 <nav id="navOverlay">

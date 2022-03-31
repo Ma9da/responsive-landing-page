@@ -1,11 +1,12 @@
 import React from 'react'
 import "./contact.css"
-function Contact() {
+function Contact(props) {
+    const { title } = props.contact
     return (
         <section className="contact">
             <div className="container flexContainer">
                 <div className="contactForm">
-                    <h5 className="title">start booking now</h5>
+                    <h5 className="title"> {title} </h5>
                     <form>
                         <label htmlFor="fullName"></label>
                         <input type="text" name="fullName" id="fullName" placeholder="Full name" />
