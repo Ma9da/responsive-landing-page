@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Contact from "./components/contact/Contact";
+import Features from "./components/features/Features";
+import Footer from "./components/footer/Footer";
+import Hero from "./components/hero/Hero";
+import Navbar from "./components/navbar/Navbar";
+import Popular from "./components/popular/Popular";
+import Review from "./components/review/Review";
+import Tour from "./components/tour/Tour";
+import 'boxicons'
 function App() {
+  const hero = {
+    title: "OUTDOORS"
+  }
+  const tour = {
+    title: "EXCITING TOURS FOR ADVENTUROUS PEOPLE"
+  }
+  const popular = {
+    title: "MOST POPULAR TOUR"
+  }
+  const review = {
+    title: "WE MAKE PEOPLE GENUINELY HAPPY"
+  }
+  const contact = {
+    title: "START BOOKING NOW"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero hero={hero} />
+      <Tour tour={tour} />
+      <Features />
+      <Popular popular={popular} />
+      <Review review={review} />
+      <Contact contact={contact} />
+      <Footer />
+    </>
   );
 }
 

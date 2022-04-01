@@ -1,0 +1,67 @@
+/***** hero *****/
+.hero .flexContainer{
+    justify-content: center;
+    transform: translateY(89%);
+    align-items: center;
+    align-content: center;
+}
+.hero{
+    height: 85vh;
+    background: linear-gradient(to right bottom, rgba(126,213,111,0.8), rgba(40,180,133,0.8)),url(../../assets/img/hero-small.jpg) top;
+    background-size: cover;
+    position: relative;
+    color: var(--white-bg);
+    text-align: center;
+    clip-path: polygon(0px 0px, 100% 0px, 99.85% 71.56vh, 1px 99.35%);
+}
+.hero h2{
+    font-size: 3rem;
+    font-weight: 400;
+    animation: moveLeft 1s ease-out;
+    -webkit-animation: moveLeft 1s ease-out;
+    position: relative;
+}
+.hero p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    animation: moveRight 1s ease-out ;
+    -webkit-animation: moveRight 1s ease-out ;
+    position: relative;
+}
+.hero .primaryButton{
+    color: var(--dark-text);
+    background: var(--white-bg);
+    padding: 0.8125rem 2rem;
+    font-size: 1rem;
+}
+@keyframes moveLeft {
+    from{
+        left: 0.625rem;
+    }
+    to{
+        left: 6.25rem;
+    }
+}
+@keyframes moveRight {
+    from{
+        right: 0;
+    }
+    to{
+        right: 5.625rem;
+    }
+}
+@media (min-width:768px) {
+    .hero h2{
+        font-size: 4rem;
+        letter-spacing: 1.5rem;
+    }
+    .hero p{
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+    }
+    .hero .primaryButton{
+        padding: 0.875rem 3.125rem;
+    }
+}
+/***** End hero *****/
